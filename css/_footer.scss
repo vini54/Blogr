@@ -1,0 +1,30 @@
+footer{
+   background-color: $Very-dark-black-blue;
+   padding: 40px 0;
+   border-radius: 0 80px 0 0;
+   p{
+      color: $White;
+      margin-bottom: 20px;
+   }
+   li{
+      color: $Grayish-blue;
+      margin-bottom: 10px;
+   }
+   
+   .container{
+      width: 100%;
+      @include flex(row, space-between, start);
+      gap: 20px;
+      flex-wrap: wrap;
+      div{
+         min-width: 110px;
+      }
+   }
+   .attribution { 
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center; 
+      color: $White;
+   }
+    .attribution a { color: $intro-text; }
+}

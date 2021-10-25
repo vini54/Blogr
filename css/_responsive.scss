@@ -1,0 +1,127 @@
+@media screen and (max-width: 1219px){
+   .container, footer.container{
+      max-width: none;
+      width: 80% !important;
+   }
+   section.about, section.services{
+      background-size: 60vw auto;
+   }
+   section.about{
+      background-position: center right -25%;;
+   }
+   section.services{
+      background-position: center left -25%;
+   }
+}
+@media screen and (max-width: 767.9px){
+   header{
+      background-position: left 20% top 40%;
+      background-size: 300%, 100%;
+   }
+   header .navbar .container{
+      position: relative;
+   }
+   header nav{
+      display: none !important;
+      &.active{
+         margin: 20px 0;
+         padding: 20px 0;
+         display: flex !important;
+         width: 100% !important;
+         flex-direction: column !important;
+         align-items: center !important;
+         gap: 20px;
+         background-color: $White;
+         border-radius: 10px;
+         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+         position: absolute;
+         top: 100%;
+         z-index: 100;
+         ul{
+            width: 100% !important;
+            text-align: center;
+         }
+         ul, div{
+            @include flex(column !important, center, center);
+            gap: 20px;
+         }
+         ul, .btn-clear{
+            color: $Very-dark-grayish-blue;
+         }
+         .btn-white{
+            background-color: $Light-red;
+            color: $White;
+         }
+         div{
+            border-top: 2px solid $intro-text;
+         }
+         ul > li{
+            width: 80%;
+            flex-direction: column;
+         }
+         .drop-content{
+            position: static;
+            width: 100% !important;
+            background-color: #EFEFF1;
+            box-shadow: none;
+            align-items: center !important;
+         }
+      }
+   }
+   div#menu{
+      cursor: pointer;
+      #menu-open{
+         display: block !important;
+      }
+      &.active #menu-open{
+         display: none !important;
+      }
+      &.active #menu-close{
+         display: block;
+         cursor: pointer;
+      }
+   }
+   
+   section.about, section.services{
+      background: none;
+      .content{
+         width: 100% !important;
+      }
+      .illustration{
+         display: block;
+      }
+   }
+   section.about, section.services .container{
+      flex-direction: column;
+      img{
+         width: 100%;
+      }
+   }
+   section.infra{
+      background-size: 100vw, auto 200vw;
+      background-position: center top -50vw;
+      .container{
+         @include flex(column, end, center);
+         padding: 50px 0;
+         article{
+            width: 100%;
+         }
+      }
+      img{
+         width: 60% !important;
+         position: static !important;
+      }
+   }
+}
+@media screen and (max-width: 425px){
+   section.infra{
+      img{
+         position: absolute !important;
+         width: 100% !important;
+         top: -30%;
+      }
+      article{
+         margin-top: 40vw;
+      }
+   }
+}
