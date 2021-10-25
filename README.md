@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Front-end Mentor](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Front-end Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP/hub/responsive-landing-page-with-sass-zJTEJT1bI)
+- Live Site URL: [Netlify](https://elated-kirch-3bab84.netlify.app/)
 
 ## My process
 
